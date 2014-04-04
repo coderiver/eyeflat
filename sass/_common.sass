@@ -327,32 +327,33 @@ a
 	text-align: left
 
 .says
-	position: relative
 	height: 464px
 	+cover	
 	z-index: 4 
+.says__prev, .says__next
+	position: absolute
+	top: 50%
+	margin-top: -55px
+.says__prev
+	left: 40px
+	+s(says-prev)
+.says__next
+	right: 40px
+	+s(says-next)
 .says__title
-	padding: 40px 0 50px 
+	padding: 40px 0 100px 
 	+fb
 	font-size: 48px
 	color: #FFF
 	text-align: center 
-.says__list-in
-	white-space: nowrap
-	font-size: 0
-	text-align: center
-	&:before
-		content: ""
-		display: inline-block
-		width: 0
-		height: 180px
-		vertical-align: middle
-	li
-		display: inline-block
-		margin: 0 40px
-		vertical-align: middle
+.says__list
+	position: relative
+	padding: 0 100px
+.says__list-item
+	display: inline-block
+	margin: 0 40px
+	vertical-align: middle
 	img
-		max-width: 100%
 
 .write-me
 	position: relative

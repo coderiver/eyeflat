@@ -12,6 +12,8 @@
 	<script type="text/javascript" src="imagerotator/html/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
 	<script src="js/froogaloop.min.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -191,11 +193,16 @@
 	<div class="says" style="background-image: url(img/says.jpg)">
 		<div class="says__title">О нас говорят:</div>
 		<div class="says__list">
-			<ul class="says__list-in">
-				<li><img src="img/says1.png" alt=""></li>
-				<li><img src="img/says2.png" alt=""></li>
-				<li><img src="img/says1.png" alt=""></li>
-			</ul>
+			<button class="says__prev"></button>
+			<button class="says__next"></button>
+			<div class="says__list-in cycle-slideshow" data-cycle-fx="carousel" data-cycle-prev=".says__prev" data-cycle-next=".says__next" data-cycle-timeout="0" data-cycle-slides=".says__list-item">
+				<div class="says__list-item"><img src="img/says1.png" alt=""></div>
+				<div class="says__list-item"><img src="img/says2.png" alt=""></div>
+				<div class="says__list-item"><img src="img/says1.png" alt=""></div>
+				<div class="says__list-item"><img src="img/says2.png" alt=""></div>
+				<div class="says__list-item"><img src="img/says1.png" alt=""></div>
+				<div class="says__list-item"><img src="img/says2.png" alt=""></div>
+			</div>
 		</div>
 	</div>
 	<!-- write-me -->

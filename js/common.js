@@ -53,7 +53,7 @@ $(window).scroll(function(){
 				glass.css('top', glass_top);
 			}else{
 				glass.addClass('is-fixed');
-				glass.css({'top': '120px', '-webkit-transform': 'rotate('+koef+'deg)', '-moz-transform': 'rotate('+koef+'deg)', '-o-transform': 'rotate('+koef+'deg)'});
+				glass.css({'top': '120px', '-webkit-transform': 'rotate('+koef+'deg)', '-moz-transform': 'rotate('+koef+'deg)', '-o-transform': 'rotate('+koef+'deg)', '-ms-transform': 'rotate('+koef+'deg)'});
 			}
 		}else{
 			glass.removeClass('is-fixed');
