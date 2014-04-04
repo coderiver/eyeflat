@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/IMG_4826.jpg" />
+    <userInterface showZoomButtons="false" showToolTips="true" showHotspotsButton="false" showFullScreenButton="false" showTogglePlayButton="true" showArrows="true" toolbarAlign="right" toolbarBackColor="#FFFFFF" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="0" toolbarAlpha="1" flashEmbedFonts="true" showProgressNumbers="true" progressLoopColor="#e8e8e8" progressNumColor="#949494" />
+    <control dragSpeed="0,01" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="false" disableMouseControl="false" reverseScroll="false" />
+    <rotation firstImage="12" rotate="false" rotatePeriod="3" bounce="false" rotateDirection="-1" forceDirection="false" />
+  </settings>
+  <hotspots>
+    <hotspot id="камеры" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.png" alpha="0,8">
+      <spotinfo txt="Встоенные камеры" txtWidth="240" txtBkColor="#FFFFFF" txtColor="#6A6A6A" fntHeight="13" />
+    </hotspot>
+    <hotspot id="трансформатор" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.png" alpha="0,8">
+      <spotinfo txt="Электромагнитный трансформатор" txtWidth="240" txtBkColor="#FFFFFF" txtColor="#6A6A6A" fntHeight="13" />
+    </hotspot>
+    <hotspot id="питание" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.png" alpha="0,8">
+      <spotinfo txt="Блок автономного питания" txtWidth="240" txtBkColor="#FFFFFF" txtColor="#6A6A6A" fntHeight="13" />
+    </hotspot>
+    <hotspot id="проц" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.png" alpha="0,8">
+      <spotinfo txt="Процессор" txtWidth="240" txtBkColor="#FFFFFF" txtColor="#6A6A6A" fntHeight="13" />
+    </hotspot>
+  </hotspots>
+  <images>
+    <image src="images/IMG_4814.jpg">
+      <hotspot source="камеры" offsetX="619" offsetY="144" />
+      <hotspot source="питание" offsetX="238" offsetY="329" />
+      <hotspot source="проц" offsetX="574" offsetY="250" />
+    </image>
+    <image src="images/IMG_4815.jpg">
+      <hotspot source="камеры" offsetX="619" offsetY="166" />
+      <hotspot source="питание" offsetX="207" offsetY="308" />
+      <hotspot source="проц" offsetX="547" offsetY="266" />
+    </image>
+    <image src="images/IMG_4816.jpg">
+      <hotspot source="камеры" offsetX="616" offsetY="184" />
+      <hotspot source="трансформатор" offsetX="655" offsetY="248" />
+      <hotspot source="питание" offsetX="187" offsetY="286" />
+      <hotspot source="проц" offsetX="515" offsetY="279" />
+    </image>
+    <image src="images/IMG_4817.jpg">
+      <hotspot source="камеры" offsetX="605" offsetY="209" />
+      <hotspot source="трансформатор" offsetX="650" offsetY="280" />
+      <hotspot source="питание" offsetX="173" offsetY="262" />
+      <hotspot source="проц" offsetX="479" offsetY="288" />
+    </image>
+    <image src="images/IMG_4818.jpg">
+      <hotspot source="камеры" offsetX="590" offsetY="228" />
+      <hotspot source="трансформатор" offsetX="642" offsetY="306" />
+      <hotspot source="питание" offsetX="166" offsetY="237" />
+      <hotspot source="проц" offsetX="446" offsetY="292" />
+    </image>
+    <image src="images/IMG_4819.jpg">
+      <hotspot source="камеры" offsetX="568" offsetY="250" />
+      <hotspot source="трансформатор" offsetX="624" offsetY="332" />
+      <hotspot source="питание" offsetX="167" offsetY="212" />
+      <hotspot source="проц" offsetX="407" offsetY="294" />
+    </image>
+    <image src="images/IMG_4820.jpg">
+      <hotspot source="камеры" offsetX="542" offsetY="265" />
+      <hotspot source="трансформатор" offsetX="598" offsetY="355" />
+      <hotspot source="питание" offsetX="178" offsetY="186" />
+      <hotspot source="проц" offsetX="365" offsetY="291" />
+    </image>
+    <image src="images/IMG_4821.jpg">
+      <hotspot source="камеры" offsetX="507" offsetY="279" />
+      <hotspot source="трансформатор" offsetX="566" offsetY="375" />
+      <hotspot source="питание" offsetX="191" offsetY="164" />
+      <hotspot source="проц" offsetX="325" offsetY="282" />
+    </image>
+    <image src="images/IMG_4822.jpg">
+      <hotspot source="камеры" offsetX="465" offsetY="287" />
+      <hotspot source="трансформатор" offsetX="522" offsetY="393" />
+      <hotspot source="питание" offsetX="216" offsetY="141" />
+      <hotspot source="проц" offsetX="293" offsetY="268" />
+    </image>
+    <image src="images/IMG_4823.jpg">
+      <hotspot source="камеры" offsetX="424" offsetY="291" />
+      <hotspot source="трансформатор" offsetX="482" offsetY="402" />
+      <hotspot source="питание" offsetX="241" offsetY="122" />
+      <hotspot source="проц" offsetX="264" offsetY="248" />
+    </image>
+    <image src="images/IMG_4824.jpg">
+      <hotspot source="камеры" offsetX="382" offsetY="290" />
+      <hotspot source="трансформатор" offsetX="438" offsetY="409" />
+      <hotspot source="питание" offsetX="274" offsetY="107" />
+      <hotspot source="проц" offsetX="239" offsetY="227" />
+    </image>
+    <image src="images/IMG_4825.jpg">
+      <hotspot source="камеры" offsetX="341" offsetY="284" />
+      <hotspot source="трансформатор" offsetX="391" offsetY="407" />
+    </image>
+    <image src="images/IMG_4826.jpg">
+      <hotspot source="камеры" offsetX="302" offsetY="272" />
+      <hotspot source="трансформатор" offsetX="346" offsetY="403" />
+    </image>
+    <image src="images/IMG_4827.jpg">
+      <hotspot source="камеры" offsetX="262" offsetY="253" />
+      <hotspot source="трансформатор" offsetX="302" offsetY="391" />
+    </image>
+    <image src="images/IMG_4828.jpg">
+      <hotspot source="камеры" offsetX="239" offsetY="232" />
+      <hotspot source="трансформатор" offsetX="264" offsetY="375" />
+    </image>
+    <image src="images/IMG_4829.jpg">
+      <hotspot source="камеры" offsetX="222" offsetY="215" />
+      <hotspot source="трансформатор" offsetX="233" offsetY="359" />
+    </image>
+    <image src="images/IMG_4830.jpg">
+      <hotspot source="камеры" offsetX="210" offsetY="191" />
+      <hotspot source="трансформатор" offsetX="204" offsetY="334" />
+      <hotspot source="питание" offsetX="508" offsetY="98" />
+    </image>
+    <image src="images/IMG_4831.jpg">
+      <hotspot source="камеры" offsetX="205" offsetY="170" />
+      <hotspot source="питание" offsetX="538" offsetY="105" />
+    </image>
+    <image src="images/IMG_4832.jpg">
+      <hotspot source="камеры" offsetX="208" offsetY="149" />
+      <hotspot source="питание" offsetX="572" offsetY="118" />
+    </image>
+    <image src="images/IMG_4833.jpg">
+      <hotspot source="камеры" offsetX="218" offsetY="127" />
+      <hotspot source="питание" offsetX="600" offsetY="135" />
+    </image>
+    <image src="images/IMG_4834.jpg">
+      <hotspot source="камеры" offsetX="232" offsetY="112" />
+      <hotspot source="питание" offsetX="625" offsetY="154" />
+    </image>
+    <image src="images/IMG_4835.jpg">
+      <hotspot source="камеры" offsetX="252" offsetY="97" />
+      <hotspot source="питание" offsetX="642" offsetY="180" />
+    </image>
+    <image src="images/IMG_4836.jpg">
+      <hotspot source="камеры" offsetX="274" offsetY="84" />
+      <hotspot source="питание" offsetX="653" offsetY="202" />
+    </image>
+    <image src="images/IMG_4837.jpg">
+      <hotspot source="камеры" offsetX="295" offsetY="72" />
+      <hotspot source="питание" offsetX="656" offsetY="226" />
+    </image>
+    <image src="images/IMG_4838.jpg">
+      <hotspot source="камеры" offsetX="317" offsetY="65" />
+      <hotspot source="питание" offsetX="651" offsetY="253" />
+    </image>
+    <image src="images/IMG_4839.jpg">
+      <hotspot source="камеры" offsetX="346" offsetY="57" />
+      <hotspot source="питание" offsetX="639" offsetY="277" />
+    </image>
+    <image src="images/IMG_4840.jpg">
+      <hotspot source="камеры" offsetX="375" offsetY="51" />
+      <hotspot source="питание" offsetX="622" offsetY="300" />
+    </image>
+    <image src="images/IMG_4841.jpg">
+      <hotspot source="камеры" offsetX="404" offsetY="49" />
+      <hotspot source="питание" offsetX="599" offsetY="323" />
+    </image>
+    <image src="images/IMG_4842.jpg">
+      <hotspot source="камеры" offsetX="439" offsetY="52" />
+      <hotspot source="питание" offsetX="567" offsetY="342" />
+      <hotspot source="проц" offsetX="575" offsetY="92" />
+    </image>
+    <image src="images/IMG_4843.jpg">
+      <hotspot source="камеры" offsetX="465" offsetY="56" />
+      <hotspot source="питание" offsetX="532" offsetY="356" />
+      <hotspot source="проц" offsetX="595" offsetY="110" />
+    </image>
+    <image src="images/IMG_4844.jpg">
+      <hotspot source="камеры" offsetX="488" offsetY="58" />
+      <hotspot source="питание" offsetX="491" offsetY="366" />
+      <hotspot source="проц" offsetX="611" offsetY="130" />
+    </image>
+    <image src="images/IMG_4845.jpg">
+      <hotspot source="камеры" offsetX="517" offsetY="69" />
+      <hotspot source="питание" offsetX="445" offsetY="375" />
+      <hotspot source="проц" offsetX="622" offsetY="147" />
+    </image>
+    <image src="images/IMG_4846.jpg">
+      <hotspot source="камеры" offsetX="545" offsetY="78" />
+      <hotspot source="питание" offsetX="400" offsetY="374" />
+      <hotspot source="проц" offsetX="627" offsetY="168" />
+    </image>
+    <image src="images/IMG_4847.jpg">
+      <hotspot source="камеры" offsetX="571" offsetY="93" />
+      <hotspot source="питание" offsetX="356" offsetY="368" />
+      <hotspot source="проц" offsetX="624" offsetY="188" />
+    </image>
+    <image src="images/IMG_4848.jpg">
+      <hotspot source="камеры" offsetX="590" offsetY="109" />
+      <hotspot source="питание" offsetX="312" offsetY="359" />
+      <hotspot source="проц" offsetX="613" offsetY="209" />
+    </image>
+    <image src="images/IMG_4849.jpg">
+      <hotspot source="камеры" offsetX="605" offsetY="121" />
+      <hotspot source="питание" offsetX="272" offsetY="347" />
+      <hotspot source="проц" offsetX="596" offsetY="232" />
+    </image>
+  </images>
+</config>

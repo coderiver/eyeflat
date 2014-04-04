@@ -6,17 +6,202 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" type="text/css" href="imagerotator/html/css/thin.css"/>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="imagerotator/html/js/swfobject.js"></script>
+	<script type="text/javascript" src="imagerotator/html/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
+	<script src="js/froogaloop.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- main -->
+	<div class="main">
+		<!-- logo -->
+		<div class="logo">
+			<div class="logo__pic"></div>
+			<div class="logo__text">Eye Flattener</div>
+		</div>
+		<!-- menu -->
+		<div class="menu">
+			<div class="menu__head">
+				<div class="menu__ico"></div>
+				<div class="menu__text">Меню</div>
+			</div>
+			<ul class="menu__list">
+				<li><a href="main">Приветливая страница</a></li>
+				<li><a href="content">О продукте</a></li>
+				<li><a href="tour3d">Флэш-тур</a></li>
+				<li><a href="about">Обо мне</a></li>
+				<li><a href="says">О нас говорят</a></li>
+				<li><a href="write-me">Написать письмо</a></li>
+			</ul>
+		</div>
+		<!-- let-scroll -->
+		<div class="lets-scroll">
+			<div class="lets-scroll__ico"></div>
+			<div class="lets-scroll__text">Прокрутите вниз</div>
+			<div class="lets-scroll__arr"></div>
+		</div>
+		<!-- watch-video -->
+		<button class="watch-video">
+			<i></i>
+			<span>Посмотреть видео</span>
+		</button>
+		<!-- video -->
+		<div class="video">
+			<div class="video__bg"></div>
+			<div class="video__container">
+				<iframe id="video" src="//player.vimeo.com/video/5324878?api=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- content -->
+	<div class="content">
+		<div class="content__in">
+			<div class="content__title">Revolution in watching experience</div>
+			<div class="content__title-sub">(Цукерберг позвонит, siliconrus.com, 24.05.2014)</div>
+			<div class="content__item">
+				<div class="content__item-title">Революция</div>
+				<div class="content__item-text">Мы создали уникальное в своем роде устройство, которое навсегда изменит наше восприятие плоских экранов. «Выпрямитель Глаз» позволяет достичь невероятного погружения в картинку. В паре с магнитными контактными линзами мы изменяем форму глаза, адаптируя его под форму экрана. «Выпрямленные» глаза позволяют нам по-новому взглянуть на привычный плоский экран телевизора, просмотр которого превращается в настоящее зрелище!</div>
+			</div>
+			<div class="content__item">
+				<div class="content__item-title">Увеличение экрана</div>
+				<div class="content__item-text">Экран телевизора становится значительно больше. Естественно, меняется всего лишь наше визуальное восприятие картинки. Мозг иначе трактует информацию, поступающую через плоские глаза. У него создается впечатление, что картинка намного ближе, чем есть на самом деле. За счет этого и создается эффект «увеличения экрана». Результат всегда индивидуален и зависит от множества факторов. Первая волна тестирования показала, что картинка может увеличиться на 15-35%.</div>
+				<div class="content__item-img"><img src="img/img1.png" alt=""></div>
+			</div>
+			<div class="content__item">
+				<div class="content__item-title">Эффект присутствия</div>
+				<div class="content__item-text">За счет увеличения картинки и расширения зоны фокусировки глаз мы добились полного погружения в происходящее на экране. Просмотр кино превратится в настоящее путешествие по новым мирам. Благодаря нашему устройству изображение окружает вас со всех сторон, а события разворачиваются прямо у вас на глазах.</div>
+				<div class="content__item-img"><img src="img/img2.png" alt=""></div>
+			</div>
+			<div class="content__item">
+				<div class="content__item-title">Универсальность</div>
+				<div class="content__item-text">Действие «Выпрямителя Глаз» распространяется абсолютно на любую плоскую поверхность – будь то экран телевизора или смартфона.</div>
+				<div class="content__item-img"><img src="img/img3.png" alt=""></div>
+			</div>
+			<div class="content__item">
+				<div class="content__item-title">Безвредность</div>
+				<div class="content__item-text">Несмотря на всю свою неестественность, действие «Выпрямителя Глаз» абсолютно безвредное. Специальные магнитные линзы постепенно изменяют форму глаза, приводя ее в плоское состояние. По ощущениям вы не отличите их от обычных контактных линз.</div>
+				<div class="content__item-img"><img src="img/img4.png" alt=""></div>
+			</div>
+		</div>
+		<!-- glass -->
+		<div class="glass"></div>
+	</div>
+	<!-- 3dtour -->
+	<div class="tour3d">
+		<div id="content">
+		    <div id="wr360PlayerId" class="wr360_player"></div>
+		    <script language="javascript" type="text/javascript">
+		        _imageRotator.settings.jsScriptOnly   = true;
+		        _imageRotator.settings.swfFileURL     = "imagerotator/imagerotator.swf";
+		        _imageRotator.settings.configFileURL  = "360_assets/360view/uhd_01.xml";
+		        _imageRotator.settings.graphicsPath   = "imagerotator/html/img/thin";
+		        // If you are using Flash mode and have issues with overlapping menus,
+		        // uncomment this line below and set it to true
+		        // _imageRotator.settings.flybyJsMenuFix = true;
 
-<!-- BEGIN  out-->
-<div class="out">
+		        // If you need to translate or change toolbar tooltips, uncomment these lines
+		        // _imageRotator.settings.i18n.zoomButtonsTooltip = "??";
+		        // _imageRotator.settings.i18n.hotspotButtonTooltip = "??";
+		        // _imageRotator.settings.i18n.fullScreenButtonTooltip = "??";
+		        // _imageRotator.settings.i18n.togglePlayButtonTooltip = "??";
+		        // _imageRotator.settings.i18n.arrowLeftButtonTooltip = "??";
+		        // _imageRotator.settings.i18n.arrowRightButtonTooltip = "??";
 
+		        // Specify these three values if you are loading viewer inside an HTML
+		        // element that may not be visible (display:none) when viewer starts loading (hidden tabs, js lightboxs, etc)
+		        // this.viewWidthJQFix    = ??;
+		        // this.viewHeightJQFix   = ??;
+		        // this.toolbarWidthJQFix = ??;
+		        _imageRotator.runImageRotator("wr360PlayerId");
+		    </script>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about">
+		<div class="about__img">
+			<!-- social -->
+			<div class="social">
+				<div class="social__title">Обо мне:</div>
+				<ul class="social__list">
+					<li><a class="social__vk" href="#"></a></li>
+					<li><a class="social__fb" href="#"></a></li>
+					<li><a class="social__gm" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="about__list">
+			<div class="about__list-item">
+				<ul>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-1"></i>
+						</div>
+						<div class="about__list-title">КПИ</div>
+						<div class="about__list-text">В 2004 году поступил на первый курс Приборостроительного факультета в КПИ.</div>
+					</li>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-2"></i>
+						</div>
+						<div class="about__list-title">Дипломная работа</div>
+						<div class="about__list-text">В 2010 защитил дипломную работу на тему «Разработка алгоритмов взаимодействия электромагнитного излучения с сенсорными органами человека посредством компьютеризированных оптических приборов».</div>
+					</li>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-3"></i>
+						</div>
+						<div class="about__list-title">Пекин</div>
+						<div class="about__list-text">В 2011 году посетил 2-недельную конференцию по инженерной биомеханике при Пекинском университете.</div>
+					</li>
+				</ul>
+			</div>
+			<div class="about__list-item">
+				<ul>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-4"></i>
+						</div>
+						<div class="about__list-title">Силиконовая долина</div>
+						<div class="about__list-text">В июне 2012 года посетил Start-up Boot Camp в Силиконовой долине и принял решение самостоятельно развивать свои разработки.</div>
+					</li>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-5"></i>
+						</div>
+						<div class="about__list-title">Digital Eyewear</div>
+						<div class="about__list-text">1 августа 2012 года основана компания «Digital Eyewear», занимающаяся разработкой «Выпрямителя Глаз».</div>
+					</li>
+					<li>
+						<div class="about__ico">
+							<i class="about__ico-6"></i>
+						</div>
+						<div class="about__list-title">Прототип</div>
+						<div class="about__list-text">19 января 2014 года закончена сборка первого прототипа «Выпрямителя Глаз».</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- says -->
+	<div class="says" style="background-image: url(img/says.jpg)">
+		<div class="says__title">О нас говорят:</div>
+		<div class="says__list">
+			<ul class="says__list-in">
+				<li><img src="img/says1.png" alt=""></li>
+				<li><img src="img/says2.png" alt=""></li>
+				<li><img src="img/says1.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<!-- write-me -->
+	<div class="write-me">
+		<a href="mailto:petro@mail.ua">Можете написать мне письмо</a>
+	</div>
 </div>
-<!-- END out-->
-
 </body>
 </html>
