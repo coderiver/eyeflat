@@ -117,9 +117,14 @@ a
 		.menu__ico
 			+s(menu-close)
 		.menu__list
-			display: block
+			visibility: visible
+			li
+				left: 0
+				opacity: 1 
 .menu__head
 	display: inline-block
+	height: 42px
+	line-height: 42px
 	cursor: pointer
 .menu__ico, .menu__text
 	display: inline-block
@@ -132,12 +137,28 @@ a
 	color: #FFF
 	font-size: 30px 
 .menu__list
-	display: none
+	visibility: hidden
 	padding-top: 15px
 	a
 		+fb
 		font-size: 28px
 		color: #FFF 
+	li
+		position: relative
+		left: -30px
+		opacity: 0 
+		+tr(all .1s linear)
+		+transition-delay(.1s)
+	li + li
+		+transition-delay(.2s)
+	li + li + li
+		+transition-delay(.3s)
+	li + li + li + li
+		+transition-delay(.4s)
+	li + li + li + li +li
+		+transition-delay(.5s)
+	li + li + li + li +li + li
+		+transition-delay(.6s)
 	
 .lets-scroll
 	position: absolute
@@ -146,7 +167,7 @@ a
 	margin-left: -96px
 	padding-bottom: 47px
 	font-size: 0
-	cursor: default
+	cursor: pointer
 	z-index: 6 
 .lets-scroll__ico, .lets-scroll__text
 	display: inline-block
@@ -316,6 +337,20 @@ a
 		display: inline-block
 		vertical-align: top
 		z-index: 2 
+	&.is-wide-first
+		&:before
+			display: none
+	&.is-narrow-first
+		+rt(1366)
+			&:before
+				display: none
+	&.is-wide-last
+		&:after
+			display: none
+	&.is-narrow-last
+		+rt(1366)
+			&:after
+				display: none
 .about__list-title
 	margin-bottom: 20px
 	text-align: center
@@ -367,6 +402,8 @@ a
 		+fb
 		color: #FFF
 		font-size: 40px  
+		&:hover
+			color: #44E671 
 
 .glass
 	position: absolute
@@ -392,7 +429,9 @@ a
 	z-index: 4 
 	
 #content
-	height: 460px 
+	width: 764px 
+	height: 460px
+	margin: 0 auto 
 	
 
 

@@ -3,6 +3,7 @@ $(document).ready(function() {
 var watch_video = $('.watch-video'),
 		video = $('.video__container'),
 		menu = $('.menu'),
+		main = $('.main'),
 		menu_link = menu.find('a'),
 		menu_head = $('.menu__head'),
 		lets_scroll = $('.lets-scroll'),
@@ -25,10 +26,14 @@ menu_head.on('click',function(){
 	menu.toggleClass('is-open');
 })
 menu_link.on('click', function(){
-
 	var item = $(this).attr('href'),
 			item_top = $('.'+item).offset().top;
 	$('html, body').animate({scrollTop: item_top}, 900);
+	return false;
+});
+lets_scroll.on('click', function(){
+	var top = main.height();
+	$('html, body').animate({scrollTop: top}, 500);
 	return false;
 });
 

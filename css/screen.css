@@ -49,9 +49,10 @@ a { text-decoration: none; }
 .menu { position: absolute; top: 116px; left: 45px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; z-index: 6; }
 .menu.is-open .menu__text { display: none; }
 .menu.is-open .menu__ico { background: url('../img/icons-s8736d523c9.png') 0 -1356px no-repeat; width: 22px; height: 22px; }
-.menu.is-open .menu__list { display: block; }
+.menu.is-open .menu__list { visibility: visible; }
+.menu.is-open .menu__list li { left: 0; opacity: 1; }
 
-.menu__head { display: inline-block; cursor: pointer; }
+.menu__head { display: inline-block; height: 42px; line-height: 42px; cursor: pointer; }
 
 .menu__ico, .menu__text { display: inline-block; vertical-align: middle; }
 
@@ -59,10 +60,16 @@ a { text-decoration: none; }
 
 .menu__text { font-family: "OfficinaSerifBoldOSC", Arial, sans-serif; -webkit-font-smoothing: antialiased; color: white; font-size: 30px; }
 
-.menu__list { display: none; padding-top: 15px; }
+.menu__list { visibility: hidden; padding-top: 15px; }
 .menu__list a { font-family: "OfficinaSerifBoldOSC", Arial, sans-serif; -webkit-font-smoothing: antialiased; font-size: 28px; color: white; }
+.menu__list li { position: relative; left: -30px; opacity: 0; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; transition-delay: 0.1s; }
+.menu__list li + li { -webkit-transition-delay: 0.2s; -moz-transition-delay: 0.2s; -o-transition-delay: 0.2s; transition-delay: 0.2s; }
+.menu__list li + li + li { -webkit-transition-delay: 0.3s; -moz-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s; }
+.menu__list li + li + li + li { -webkit-transition-delay: 0.4s; -moz-transition-delay: 0.4s; -o-transition-delay: 0.4s; transition-delay: 0.4s; }
+.menu__list li + li + li + li + li { -webkit-transition-delay: 0.5s; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; transition-delay: 0.5s; }
+.menu__list li + li + li + li + li + li { -webkit-transition-delay: 0.6s; -moz-transition-delay: 0.6s; -o-transition-delay: 0.6s; transition-delay: 0.6s; }
 
-.lets-scroll { position: absolute; left: 50%; bottom: 18px; margin-left: -96px; padding-bottom: 47px; font-size: 0; cursor: default; z-index: 6; }
+.lets-scroll { position: absolute; left: 50%; bottom: 18px; margin-left: -96px; padding-bottom: 47px; font-size: 0; cursor: pointer; z-index: 6; }
 
 .lets-scroll__ico, .lets-scroll__text { display: inline-block; vertical-align: middle; }
 
@@ -141,6 +148,10 @@ a { text-decoration: none; }
 .about__ico:before { left: 0; }
 .about__ico:after { right: 0; }
 .about__ico i { position: relative; display: inline-block; vertical-align: top; z-index: 2; }
+.about__ico.is-wide-first:before { display: none; }
+@media only screen and (max-width: 1366px) { .about__ico.is-narrow-first:before { display: none; } }
+.about__ico.is-wide-last:after { display: none; }
+@media only screen and (max-width: 1366px) { .about__ico.is-narrow-last:after { display: none; } }
 
 .about__list-title { margin-bottom: 20px; text-align: center; font-family: "OfficinaSerifBoldOSC", Arial, sans-serif; -webkit-font-smoothing: antialiased; font-size: 22px; }
 
@@ -162,6 +173,7 @@ a { text-decoration: none; }
 
 .write-me { position: relative; z-index: 4; }
 .write-me a { display: block; height: 140px; background: #616161; line-height: 140px; text-align: center; font-family: "OfficinaSerifBoldOSC", Arial, sans-serif; -webkit-font-smoothing: antialiased; color: white; font-size: 40px; }
+.write-me a:hover { color: #44e671; }
 
 .glass { position: absolute; top: 120px; right: 62%; width: 920px; height: 770px; background-image: url(../img/glass.jpg); background-size: 100% 100%; -moz-transform: rotate(-30deg); -o-transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -ms-transform: rotate(-30deg); transform: rotate(-30deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 @media only screen and (max-width: 1600px) { .glass { width: 850px; height: 700px; } }
@@ -170,7 +182,7 @@ a { text-decoration: none; }
 
 .tour3d { position: relative; background: white; z-index: 4; }
 
-#content { height: 460px; }
+#content { width: 764px; height: 460px; margin: 0 auto; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
