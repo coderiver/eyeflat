@@ -172,9 +172,19 @@ a
 .lets-scroll__ico, .lets-scroll__text
 	display: inline-block
 	vertical-align: middle
++keyframes(wave)
+	0%
+		top: -5px 
+	50%
+		top: 5px 
+	100%
+		top: -5px 
+	    
 .lets-scroll__ico
 	margin-right: 22px
+	position: relative
 	+s(mouse)
+	+animation(wave 1s linear infinite both)
 .lets-scroll__text
 	width: 135px
 	+fb
