@@ -7,6 +7,7 @@ var watch_video = $('.watch-video'),
 		menu_link = menu.find('a'),
 		menu_head = $('.menu__head'),
 		lets_scroll = $('.lets-scroll'),
+		body = $('body'),
 		iframe = $('#player')[0];
 
 var iframe = document.getElementById('video');
@@ -37,7 +38,6 @@ lets_scroll.on('click', function(){
 	return false;
 });
 
-
 //window scroll
 $(window).scroll(function(){
 
@@ -51,13 +51,9 @@ $(window).scroll(function(){
 			koef = 60*(scroll_top-content_top)/content_height;
 			koef = koef-30;
 
-
 		if (scroll_top > content_top) {
-			if (koef > 29) {
-				glass.removeClass('is-fixed');
-				glass.css('top', glass_top);
-			}else{
-				glass.addClass('is-fixed');
+			glass.addClass('is-fixed');
+			if (koef < 29) {
 				glass.css({'top': '120px', '-webkit-transform': 'rotate('+koef+'deg)', '-moz-transform': 'rotate('+koef+'deg)', '-o-transform': 'rotate('+koef+'deg)', '-ms-transform': 'rotate('+koef+'deg)'});
 			}
 		}else{
@@ -67,5 +63,7 @@ $(window).scroll(function(){
 	
 
 });
+
+
 
 });

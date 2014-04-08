@@ -177,7 +177,7 @@ a { text-decoration: none; }
 
 .about__list-text { padding: 0 10%; font-size: 14px; text-align: left; }
 
-.says { height: 464px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: 4; }
+.says { position: relative; height: 464px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: 4; }
 
 .says__prev, .says__next { position: absolute; top: 50%; margin-top: -55px; }
 
